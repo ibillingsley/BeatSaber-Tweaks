@@ -2,7 +2,8 @@
 using HarmonyLib;
 using IPA;
 using IPA.Loader;
-using UnityEngine;
+using IzaTweaks.Installers;
+using SiraUtil.Zenject;
 using IPALogger = IPA.Logging.Logger;
 
 namespace IzaTweaks
@@ -18,11 +19,11 @@ namespace IzaTweaks
         // The constructor is called before any method with [Init]. Only use [Init] with one constructor.
 
         [Init]
-        public Plugin(IPALogger ipaLogger, PluginMetadata pluginMetadata)
+        public Plugin(IPALogger ipaLogger, PluginMetadata pluginMetadata, Zenjector zenjector)
         {
             Log = ipaLogger;
-
             Log.Info($"{pluginMetadata.Name} {pluginMetadata.HVersion} initialized.");
+            zenjector.Install<GameInstaller>(Location.GameCore);
         }
 
         [OnStart]
