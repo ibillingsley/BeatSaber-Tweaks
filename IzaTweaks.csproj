@@ -6,7 +6,7 @@
     <LangVersion>8</LangVersion>
     <Nullable>disable</Nullable>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <RootNamespace>BugFix</RootNamespace>
+    <RootNamespace>IzaTweaks</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -70,7 +70,7 @@
 
   <ItemGroup>
     <None Include="Directory.Build.props" Condition="Exists('Directory.Build.props')"/>
-    <Content Include="BugFix.csproj.user" Condition="Exists('BugFix.csproj.user')"/>
+    <Content Include="IzaTweaks.csproj.user" Condition="Exists('IzaTweaks.csproj.user')"/>
   </ItemGroup>
 
   <PropertyGroup>

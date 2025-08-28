@@ -5,7 +5,7 @@ using IPA.Loader;
 using UnityEngine;
 using IPALogger = IPA.Logging.Logger;
 
-namespace BugFix
+namespace IzaTweaks
 {
     [Plugin(RuntimeOptions.SingleStartInit)]
     internal class Plugin
@@ -29,7 +29,7 @@ namespace BugFix
         public void OnApplicationStart()
         {
             Log.Debug("OnApplicationStart");
-            Harmony = new Harmony("iza.BugFix");
+            Harmony = new Harmony("IzaTweaks");
             Harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
 

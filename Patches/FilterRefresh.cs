@@ -2,12 +2,12 @@ using System.Diagnostics;
 using System.Linq;
 using HarmonyLib;
 
-namespace BugFix.Patches
+namespace IzaTweaks.Patches
 {
 	// Clear BetterSongList filter when selecting a BeatSaberPlus song request
 
 	[HarmonyPatch(typeof(LevelSearchViewController), nameof(LevelSearchViewController.Refresh), new[] { typeof(LevelFilter) }, new[] { ArgumentType.Ref })]
-	static class HookFilterRefresh
+	static class FilterRefresh
 	{
 		static void Prefix(LevelSearchViewController __instance)
 		{

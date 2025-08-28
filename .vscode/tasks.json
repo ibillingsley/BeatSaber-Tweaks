@@ -1,13 +1,13 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"label": "build",
-			"command": "dotnet",
-			"type": "shell",
-			"args": ["build", "BugFix.csproj", "-property:Configuration=Release"],
-			"group": "build",
-			"problemMatcher": "$msCompile"
-		}
-	]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "command": "dotnet",
+      "type": "shell",
+      "args": ["build", "IzaTweaks.csproj", "-property:Configuration=Release"],
+      "group": "build",
+      "problemMatcher": "$msCompile"
+    }
+  ]
 }

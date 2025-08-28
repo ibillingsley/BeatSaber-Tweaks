@@ -4,26 +4,26 @@
 
   <!-- Plugin Metadata -->
   <PropertyGroup>
-    <PluginId>izaBugFix</PluginId>
-    <PluginName>BugFix</PluginName>
+    <PluginId>IzaTweaks</PluginId>
+    <PluginName>IzaTweaks</PluginName>
     <Authors>iza</Authors>
     <Version>1.0.0</Version>
-    <GameVersion>1.40.6</GameVersion>
-    <Description>Misc bug fixes.</Description>
+    <GameVersion>1.40.0</GameVersion>
+    <Description>Miscellaneous tweaks</Description>
   </PropertyGroup>
 
   <!-- Plugin Dependencies -->
   <ItemGroup>
     <DependsOn Include="BSIPA" Version="^4.3.0"/>
   </ItemGroup>
-  
+
   <PropertyGroup>
     <BSMTProjectType>BSIPA</BSMTProjectType>
     <GenerateManifest>true</GenerateManifest>
   </PropertyGroup>
-  
+
   <PropertyGroup Condition="'$(Configuration)' != 'Release'">
     <DisableZipRelease>true</DisableZipRelease>
   </PropertyGroup>
-  
+
 </Project>

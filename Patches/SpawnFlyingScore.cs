@@ -1,15 +1,13 @@
-using System.Diagnostics;
-using System.Linq;
 using HarmonyLib;
 using UnityEngine;
 
-namespace BugFix.Patches
+namespace IzaTweaks.Patches
 {
 	// Fix 1.40.0+ HSV bug
 	// https://github.com/Meivyn/BeatSaberBugs/issues/26
 
 	[HarmonyPatch(typeof(FlyingScoreSpawner), nameof(FlyingScoreSpawner.SpawnFlyingScoreNextFrame))]
-	static class HookSpawnFlyingScore
+	static class SpawnFlyingScore
 	{
 		static bool Prefix(FlyingScoreSpawner __instance, IReadonlyCutScoreBuffer cutScoreBuffer, Color color)
 		{

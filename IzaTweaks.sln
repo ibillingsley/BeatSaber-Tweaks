@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugFix", "BugFix.csproj", "{540AB4FE-2574-4EB4-B967-81ECAB0A3156}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IzaTweaks", "IzaTweaks.csproj", "{540AB4FE-2574-4EB4-B967-81ECAB0A3156}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
