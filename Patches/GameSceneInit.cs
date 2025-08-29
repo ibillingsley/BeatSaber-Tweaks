@@ -3,13 +3,14 @@ using Zenject;
 
 namespace IzaTweaks.Patches
 {
-	// Disable the glowing border on the player platform
+    // Disable the glowing border on the player platform
 
-	class GameSceneInit : IInitializable
-	{
-		public void Initialize()
-		{
-			GameObject.Find("PlayersPlace/RectangleFakeGlow")?.SetActive(false);
-		}
-	}
+    class GameSceneInit : IInitializable
+    {
+        public void Initialize()
+        {
+            if (Plugin.Config.DisablePlayerPlatformBorder)
+                GameObject.Find("PlayersPlace/RectangleFakeGlow")?.SetActive(false);
+        }
+    }
 }

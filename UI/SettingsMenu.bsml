@@ -1,0 +1,27 @@
+<bg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://monkeymanboy.github.io/BSML-Docs/BSMLSchema.xsd">
+  <settings-container>
+    <toggle-setting
+      value="DisablePlayerPlatformBorder"
+      text="Disable player platform border"
+      hover-hint="Disables the glowing border around the player platform"
+      apply-on-change="true"></toggle-setting>
+    <toggle-setting
+      value="DisableWallBloom"
+      text="Disable wall bloom"
+      hover-hint="Disables wall outline bloom"
+      apply-on-change="true"></toggle-setting>
+    <toggle-setting
+      value="ClearFilterOnSongRequest"
+      text="Clear filters on BS+ song request"
+      hover-hint="Clears BetterSongList filters when accepting a BeatSaberPlus song request"
+      apply-on-change="true"></toggle-setting>
+    <toggle-setting
+      value="FixHSV"
+      text="Fix 1.40 HSV arc bug"
+      hover-hint="Fixes cut score text bug when hitting 2 blocks with arcs at the same time in BS 1.40 &lt;size=90%&gt;&lt;voffset=-0.3em&gt;(github.com/Meivyn/BeatSaberBugs/issues/26)"
+      apply-on-change="true"></toggle-setting>
+    <horizontal pad-top="4">
+      <text text="Changes saved automatically (even if you click Cancel)" font-size="3.5" color="#BBB"></text>
+    </horizontal>
+  </settings-container>
+</bg>
