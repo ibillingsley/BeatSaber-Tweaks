@@ -38,5 +38,19 @@ namespace IzaTweaks.UI
             get => Plugin.Config.FixHSV;
             set => Plugin.Config.FixHSV = value;
         }
+
+        [UIValue("RankPercentFontSize")]
+        public float RankPercentFontSize
+        {
+            get => Plugin.Config.RankPercentFontSize;
+            set => Plugin.Config.RankPercentFontSize = value;
+        }
+
+        [UIValue("RankLetterFontSize")]
+        public float RankLetterFontSize
+        {
+            get => Plugin.Config.RankLetterFontSize;
+            set => Plugin.Config.RankLetterFontSize = value;
+        }
     }
 }

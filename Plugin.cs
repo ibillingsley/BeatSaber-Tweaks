@@ -16,6 +16,7 @@ namespace IzaTweaks
         internal static Logger Log { get; private set; }
         internal static Harmony Harmony { get; private set; }
         internal static PluginConfig Config { get; private set; }
+        internal static PluginConfig Default = new PluginConfig();
 
         // Methods with [Init] are called when the plugin is first loaded by IPA.
         // All the parameters are provided by IPA and are optional.
