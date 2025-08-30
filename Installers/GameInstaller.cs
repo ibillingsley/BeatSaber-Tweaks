@@ -7,7 +7,7 @@ namespace IzaTweaks.Installers
     {
         public override void InstallBindings()
         {
-            Container.BindInterfacesAndSelfTo<GameSceneInit>().AsSingle();
+            Container.BindInterfacesTo<GamePatches>().AsSingle();
         }
     }
 }

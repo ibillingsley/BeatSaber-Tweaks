@@ -1,6 +1,4 @@
-﻿using System.Reflection;
-using HarmonyLib;
-using IPA;
+﻿using IPA;
 using IPA.Config;
 using IPA.Config.Stores;
 using IPA.Loader;
@@ -14,7 +12,6 @@ namespace IzaTweaks
     internal class Plugin
     {
         internal static Logger Log { get; private set; }
-        internal static Harmony Harmony { get; private set; }
         internal static PluginConfig Config { get; private set; }
         internal static PluginConfig Default = new PluginConfig();
 
@@ -37,15 +34,12 @@ namespace IzaTweaks
         public void OnApplicationStart()
         {
             Log.Debug("OnApplicationStart");
-            Harmony = new Harmony("IzaTweaks");
-            Harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
 
         [OnExit]
         public void OnApplicationQuit()
         {
             Log.Debug("OnApplicationQuit");
-            Harmony.UnpatchSelf();
         }
     }
 }

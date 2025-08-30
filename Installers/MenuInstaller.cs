@@ -1,3 +1,4 @@
+using IzaTweaks.Patches;
 using IzaTweaks.UI;
 using Zenject;
 
@@ -7,7 +8,8 @@ namespace IzaTweaks.Installers
     {
         public override void InstallBindings()
         {
-            Container.BindInterfacesAndSelfTo<SettingsMenu>().AsSingle();
+            Container.BindInterfacesTo<MenuPatches>().AsSingle();
+            Container.BindInterfacesTo<SettingsMenu>().AsSingle();
         }
     }
 }
