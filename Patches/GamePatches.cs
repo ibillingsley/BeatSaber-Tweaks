@@ -12,15 +12,15 @@ namespace IzaTweaks.Patches
                 GameObject.Find("PlayersPlace/RectangleFakeGlow")?.SetActive(false);
 
             // HUD font sizes
-            if (Plugin.Config.RankPercentFontSize != Plugin.Default.RankPercentFontSize || Plugin.Config.RankLetterFontSize != Plugin.Default.RankLetterFontSize)
+            if (Plugin.Config.ScorePercentFontSize != Plugin.Default.ScorePercentFontSize || Plugin.Config.RankFontSize != Plugin.Default.RankFontSize)
             {
                 var immediateRankUIPanel = gameHUDController.GetComponentInChildren<ImmediateRankUIPanel>();
                 if (immediateRankUIPanel != null)
                 {
-                    immediateRankUIPanel._relativeScoreText.fontSize = Plugin.Config.RankPercentFontSize;
+                    immediateRankUIPanel._relativeScoreText.fontSize = Plugin.Config.ScorePercentFontSize;
                     immediateRankUIPanel._relativeScoreText.enableWordWrapping = false;
 
-                    immediateRankUIPanel._rankText.fontSize = Plugin.Config.RankLetterFontSize;
+                    immediateRankUIPanel._rankText.fontSize = Plugin.Config.RankFontSize;
                     immediateRankUIPanel._rankText.enableWordWrapping = false;
                 }
             }
@@ -41,9 +41,9 @@ namespace IzaTweaks.Patches
 
         [AffinityPrefix]
         [AffinityPatch(typeof(FlyingScoreSpawner), nameof(FlyingScoreSpawner.SpawnFlyingScoreNextFrame))]
-        public bool FixHSV(FlyingScoreSpawner __instance, IReadonlyCutScoreBuffer cutScoreBuffer, Color color)
+        public bool FixCutScoreText(FlyingScoreSpawner __instance, IReadonlyCutScoreBuffer cutScoreBuffer, Color color)
         {
-            if (!Plugin.Config.FixHSV) return true;
+            if (!Plugin.Config.FixCutScoreText) return true;
 
             __instance.SpawnFlyingScore(cutScoreBuffer, color);
             return false;

@@ -32,25 +32,25 @@ namespace IzaTweaks.UI
             set => Plugin.Config.ClearFilterOnSongRequest = value;
         }
 
-        [UIValue("FixHSV")]
-        public bool FixHSV
+        [UIValue("FixCutScoreText")]
+        public bool FixCutScoreText
         {
-            get => Plugin.Config.FixHSV;
-            set => Plugin.Config.FixHSV = value;
+            get => Plugin.Config.FixCutScoreText;
+            set => Plugin.Config.FixCutScoreText = value;
         }
 
-        [UIValue("RankPercentFontSize")]
-        public float RankPercentFontSize
+        [UIValue("ScorePercentFontSize")]
+        public float ScorePercentFontSize
         {
-            get => Plugin.Config.RankPercentFontSize;
-            set => Plugin.Config.RankPercentFontSize = value;
+            get => Plugin.Config.ScorePercentFontSize;
+            set => Plugin.Config.ScorePercentFontSize = value;
         }
 
-        [UIValue("RankLetterFontSize")]
-        public float RankLetterFontSize
+        [UIValue("RankFontSize")]
+        public float RankFontSize
         {
-            get => Plugin.Config.RankLetterFontSize;
-            set => Plugin.Config.RankLetterFontSize = value;
+            get => Plugin.Config.RankFontSize;
+            set => Plugin.Config.RankFontSize = value;
         }
     }
 }
