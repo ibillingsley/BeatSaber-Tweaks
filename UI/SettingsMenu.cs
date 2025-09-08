@@ -39,6 +39,13 @@ namespace IzaTweaks.UI
             set => Plugin.Config.NoteColorForceOverride = value;
         }
 
+        [UIValue("ReeSabersNotesColorShift")]
+        public bool ReeSabersNotesColorShift
+        {
+            get => Plugin.Config.ReeSabersNotesColorShift;
+            set => Plugin.Config.ReeSabersNotesColorShift = value;
+        }
+
         [UIValue("FixCutScoreText")]
         public bool FixCutScoreText
         {

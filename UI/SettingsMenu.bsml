@@ -45,8 +45,13 @@
       <text text="Misc" font-size="5" color="#AAA"></text>
     </horizontal>
     <toggle-setting
+      value="ReeSabersNotesColorShift"
+      text="ReeSabers NotesColor mode use hue shift"
+      hover-hint="Changes &quot;NotesColor&quot; color mode to use hue shift instead of hue override"
+      apply-on-change="true"></toggle-setting>
+    <toggle-setting
       value="NoteColorForceOverride"
-      text="Auto toggle SongCore &amp; Chroma note colors on override"
+      text="Override default colors auto toggle Custom/Chroma note colors"
       hover-hint="Automatically disable/enable note colors from SongCore and Chroma when &quot;override default colors&quot; is toggled"
       apply-on-change="true"></toggle-setting>
     <horizontal pad-top="4">

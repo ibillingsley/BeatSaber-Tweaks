@@ -36,6 +36,7 @@
     <Reference Include="mscorlib" HintPath="$(BeatSaberDir)\Beat Saber_Data\Managed\mscorlib.dll"/>
     <Reference Include="netstandard" HintPath="$(BeatSaberDir)\Beat Saber_Data\Managed\netstandard.dll"/>
     <Reference Include="Newtonsoft.Json" HintPath="$(BeatSaberDir)\Beat Saber_Data\Managed\Newtonsoft.Json.dll"/>
+    <Reference Include="ReeSabers" HintPath="$(BeatSaberDir)\Plugins\ReeSabers.dll"/>
     <Reference Include="SiraUtil" HintPath="$(BeatSaberDir)\Plugins\SiraUtil.dll"/>
     <Reference Include="SongCore" HintPath="$(BeatSaberDir)\Plugins\SongCore.dll"/>
     <Reference Include="System" HintPath="$(BeatSaberDir)\Beat Saber_Data\Managed\System.dll"/>

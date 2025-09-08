@@ -5,8 +5,16 @@
       "label": "build",
       "command": "dotnet",
       "type": "shell",
-      "args": ["build", "IzaTweaks.csproj", "-property:Configuration=Release"],
-      "group": "build",
+      "args": [
+        "build",
+        "IzaTweaks.csproj",
+        "-p:Configuration=Release",
+        "-p:DefineConstants=REESABERS"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
       "problemMatcher": "$msCompile"
     }
   ]
