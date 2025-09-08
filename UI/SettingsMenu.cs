@@ -32,6 +32,13 @@ namespace IzaTweaks.UI
             set => Plugin.Config.ClearFilterOnSongRequest = value;
         }
 
+        [UIValue("NoteColorForceOverride")]
+        public bool NoteColorForceOverride
+        {
+            get => Plugin.Config.NoteColorForceOverride;
+            set => Plugin.Config.NoteColorForceOverride = value;
+        }
+
         [UIValue("FixCutScoreText")]
         public bool FixCutScoreText
         {
