@@ -1,3 +1,4 @@
+using System;
 using SiraUtil.Affinity;
 using UnityEngine;
 
@@ -26,14 +27,14 @@ namespace IzaTweaks.Patches
             }
         }
 
-        // Disable wall outline bloom
+        // Dim wall outline bloom
 
         [AffinityPrefix]
         [AffinityPatch(typeof(ParametricBoxFrameController), nameof(ParametricBoxFrameController.Refresh))]
-        public void DisableWallBloom(ParametricBoxFrameController __instance)
+        public void WallBloom(ParametricBoxFrameController __instance)
         {
-            if (Plugin.Config.DisableWallBloom)
-                __instance.color.a = 0;
+            if (Plugin.Config.WallBloom != Plugin.Default.WallBloom)
+                __instance.color.a = Math.Min(Plugin.Config.WallBloom, __instance.color.a);
         }
 
         // Fix 1.40.0+ HSV bug

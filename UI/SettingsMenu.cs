@@ -18,11 +18,25 @@ namespace IzaTweaks.UI
             set => Plugin.Config.DisablePlayerPlatformBorder = value;
         }
 
-        [UIValue("DisableWallBloom")]
-        public bool DisableWallBloom
+        [UIValue("WallBloom")]
+        public float WallBloom
         {
-            get => Plugin.Config.DisableWallBloom;
-            set => Plugin.Config.DisableWallBloom = value;
+            get => Plugin.Config.WallBloom;
+            set => Plugin.Config.WallBloom = value;
+        }
+
+        [UIValue("ScorePercentFontSize")]
+        public float ScorePercentFontSize
+        {
+            get => Plugin.Config.ScorePercentFontSize;
+            set => Plugin.Config.ScorePercentFontSize = value;
+        }
+
+        [UIValue("RankFontSize")]
+        public float RankFontSize
+        {
+            get => Plugin.Config.RankFontSize;
+            set => Plugin.Config.RankFontSize = value;
         }
 
         [UIValue("ClearFilterOnSongRequest")]
@@ -51,20 +65,6 @@ namespace IzaTweaks.UI
         {
             get => Plugin.Config.FixCutScoreText;
             set => Plugin.Config.FixCutScoreText = value;
-        }
-
-        [UIValue("ScorePercentFontSize")]
-        public float ScorePercentFontSize
-        {
-            get => Plugin.Config.ScorePercentFontSize;
-            set => Plugin.Config.ScorePercentFontSize = value;
-        }
-
-        [UIValue("RankFontSize")]
-        public float RankFontSize
-        {
-            get => Plugin.Config.RankFontSize;
-            set => Plugin.Config.RankFontSize = value;
         }
     }
 }

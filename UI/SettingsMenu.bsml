@@ -8,11 +8,14 @@
       text="Disable player platform border"
       hover-hint="Disables the glowing border around the player platform"
       apply-on-change="true"></toggle-setting>
-    <toggle-setting
-      value="DisableWallBloom"
-      text="Disable wall bloom"
-      hover-hint="Disables the glow effect around wall outlines"
-      apply-on-change="true"></toggle-setting>
+    <slider-setting
+      value="WallBloom"
+      text="Wall bloom"
+      hover-hint="Dim the wall outlines and glow effect"
+      min="0"
+      max="1"
+      increment="0.05"
+      apply-on-change="true"></slider-setting>
     <horizontal pad-top="4">
       <text text="Game HUD" font-size="5" color="#AAA"></text>
     </horizontal>
