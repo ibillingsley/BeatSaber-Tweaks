@@ -19,10 +19,10 @@ namespace IzaTweaks.Patches
                 if (immediateRankUIPanel != null)
                 {
                     immediateRankUIPanel._relativeScoreText.fontSize = Plugin.Config.ScorePercentFontSize;
-                    immediateRankUIPanel._relativeScoreText.enableWordWrapping = false;
+                    immediateRankUIPanel._relativeScoreText.textWrappingMode = TMPro.TextWrappingModes.NoWrap;
 
                     immediateRankUIPanel._rankText.fontSize = Plugin.Config.RankFontSize;
-                    immediateRankUIPanel._rankText.enableWordWrapping = false;
+                    immediateRankUIPanel._rankText.textWrappingMode = TMPro.TextWrappingModes.NoWrap;
                 }
             }
         }

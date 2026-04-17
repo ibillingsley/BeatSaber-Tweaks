@@ -48,7 +48,7 @@ namespace IzaTweaks.Patches
             if (chroma != null)
             {
                 // Toggle Chroma setting "Disable Note Coloring"
-                var settingsType = chroma.Assembly.GetTypes().First(t => t.Name == "ChromaSettableSettings");
+                var settingsType = chroma.Assembly.GetType("Chroma.Settings.ChromaSettableSettings");
                 var noteColoringDisabledSetting = Traverse.Create(settingsType).Property("NoteColoringDisabledSetting").GetValue();
                 Traverse.Create(noteColoringDisabledSetting).Property("Value").SetValue(isOn);
 
